@@ -7,18 +7,21 @@ body{
 }
 
 h1 {
-  font-size: 5em;
-  line-height: 1.1;
+  font-size: 5.4em;
+  line-height: 1;
+  font-weight: 800;
+  font-family: 'Indie Flower', cursive;
   letter-spacing: 3px;
-  text-shadow: 3px 1px rgb(8, 64, 73);
-  padding: 20px;
-  box-shadow: 2px 10px 6px -6px #f8a100;
+  text-shadow: 4px 1px rgb(6, 49, 56);
+  padding-bottom: 5px;
+  padding-top: 25px;
+  box-shadow: 2px 13px 6px -6px #f8a100;
 }
 
 header {
   background-color: black;
   text-align: center;
-  color:rgb(26, 126, 144);
+  color:rgb(25, 126, 144);
   padding: 10px;
   margin-bottom: 15px;
 }

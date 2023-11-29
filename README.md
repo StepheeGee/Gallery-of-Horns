@@ -51,7 +51,7 @@ React State and Props
 * Feature #3: 2hrs 10min
 
 #### Comments:
-If we can't change the html file, then how do we change the main part of our page. I want to increase the margin (left and right) on the main section but not on the body - which includes the header and footer. But there isn't a main element in the index.html file. 
+If we can't change the html file, then how do we change the main part of our page. I want to increase the margin (left and right) on the main section but not on the body - which includes the header and footer. But there isn't a main element in the index.html file.
 
 I finally got my relative file paths correct. So my files are importing correctly. I was too afraid to try modules.css, because I didn't want to completely break my app again. So I updated the css in index which is global. I would've preferred to add css to the components. For instance, since all my cards are styled the same, that could've been a hornedbeast module.css. 
 
