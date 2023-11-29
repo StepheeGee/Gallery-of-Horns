@@ -1,5 +1,9 @@
 # Horned Beast Project
 
+[Netlify Link](https://luxury-marzipan-b33aff.netlify.app/)
+
+[PR Link](https://github.com/StepheeGee/Gallery-of-Horns/pull/1)
+
 ## Development
 <details>
 <summary>Day 1</summary>
