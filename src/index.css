@@ -2,39 +2,59 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+body{
+  background-color: rgb(0, 0, 0);
+}
+
 h1 {
-  font-size: 3.2em;
+  font-size: 5em;
   line-height: 1.1;
+  letter-spacing: 3px;
+  text-shadow: 3px 1px rgb(8, 64, 73);
+  padding: 20px;
+  box-shadow: 2px 10px 6px -6px #f8a100;
 }
 
 header {
-  background-color: navy;
+  background-color: black;
   text-align: center;
-  color: white;
-  padding: 20px;
+  color:rgb(26, 126, 144);
+  padding: 10px;
+  margin-bottom: 15px;
 }
 
 footer {
-  background-color: navy;
-  color: white;
+  background-color: black;
+  color: rgb(35, 178, 207);
   padding: 20px;
   text-align: center;
-  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 img{
-  height: 500px;
-  width: 500px;
-  box-shadow: 0 4px 16px navy;
+  height: 300px;
+  width: 350px;
+  margin: 20px auto;
+  box-shadow: 6px 4px 8px rgb(0, 0, 0);
 
 }
 
-
-h3, p, .fave {
-  text-align: center;
-  font-size: 20px;
+.image-card{
+text-align: center;
+height: 600px;
+box-shadow: inset 2px 0 10px rgb(8, 64, 73);
+    background: rgb(0,212,255);
+  
+    background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);    
+    color: whitesmoke;
 
 }
+
+.Button{
+  color: rgb(20, 11, 11);
+  box-shadow: 2px 3px 3px #4f3401;
+}
+
+
 
 
 

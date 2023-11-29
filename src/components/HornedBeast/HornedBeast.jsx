@@ -18,7 +18,7 @@ function HornedBeast({ imageUrl, title, description, keyword, horns }) {
           <p>Keyword: {keyword}</p>
           <p>Horns: {horns}</p>
           <div className='fave'>
-            <Button role="img" aria-label="Heart" variant="dark" onClick={incrementFavorites}>
+            <Button role="img" aria-label="Heart" variant="warning" className="Button"  onClick={incrementFavorites}>
             ❤️ {favorites} Favorites
             </Button>
           </div>
