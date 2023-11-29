@@ -1,24 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
-function HornedBeast( {props} ) {
+
+function HornedBeast({ imageUrl, title, description, keyword, horns }) {
+  const [favorites, setFavorites] = useState(0);
+
+  const incrementFavorites = () => {
+    setFavorites(prevFavorites => prevFavorites + 1);
+  };
 
   return (
     <div>
       <div className="image-container">
-        {props.map(item => (
-          <div key={item._id} className="image-card">
-            <img src={item.image_url} alt={item.title} />
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <p>Keyword: {item.keyword}</p>
-            <p>Horns: {item.horns}</p>
+        <div className="image-card">
+          <img src={imageUrl} alt={title} onClick={incrementFavorites} />
+          <h3>{title}</h3>
+          <p>{description}</p>
+          <p>Keyword: {keyword}</p>
+          <p>Horns: {horns}</p>
+          <div className='fave'>
+            <span role="img" aria-label="Heart" onClick={incrementFavorites}>
+              ❤️
+            </span>
+            <span>{favorites} Favorites</span>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
-
 }
 
 export default HornedBeast;
+
