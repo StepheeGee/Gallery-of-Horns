@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-
-
+import Button from 'react-bootstrap/Button';
 
 function HornedBeast({ imageUrl, title, description, keyword, horns }) {
   const [favorites, setFavorites] = useState(0);
 
   const incrementFavorites = () => {
-    setFavorites(prevFavorites => prevFavorites + 1);
+    setFavorites((prevFavorites) => prevFavorites + 1);
   };
 
   return (
@@ -19,10 +18,9 @@ function HornedBeast({ imageUrl, title, description, keyword, horns }) {
           <p>Keyword: {keyword}</p>
           <p>Horns: {horns}</p>
           <div className='fave'>
-            <span role="img" aria-label="Heart" onClick={incrementFavorites}>
-              ❤️
-            </span>
-            <span>{favorites} Favorites</span>
+            <Button role="img" aria-label="Heart" variant="dark" onClick={incrementFavorites}>
+            ❤️ {favorites} Favorites
+            </Button>
           </div>
         </div>
       </div>
