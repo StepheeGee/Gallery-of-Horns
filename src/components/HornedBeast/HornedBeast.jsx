@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 
-function HornedBeast({ imageUrl, title, description, keyword, horns }) {
+function HornedBeast({imageUrl, title, description, keyword, horns}) {
   const [favorites, setFavorites] = useState(0);
 
   const incrementFavorites = () => {
