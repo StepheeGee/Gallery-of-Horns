@@ -1,8 +1,13 @@
 # Horned Beast Project
 
+Author: Stephanie G Johnson
+
+## Links to Page
+
 [Netlify Link](https://luxury-marzipan-b33aff.netlify.app/)
 
 [PR Link](https://github.com/StepheeGee/Gallery-of-Horns/pull/1)
+
 [PR Link Day 3](https://github.com/StepheeGee/Gallery-of-Horns/pull/3)
 
 ## Development
@@ -91,6 +96,7 @@ Feature #1: Display a Modal
 A lot
 
 #### Comments:
+
 A question within the context of this lab assignment.
 
 This is not coming together for me for some reason. I'm struggling to understand the difference between useState and this.State. I get that modal is a functional component, so does that mean it gets an exception and is allowed to control state? Because I didn't borrow state from somewhere else for the selected beast file. I used use state and let it manage the functionality for the modal. 
@@ -107,9 +113,47 @@ How long you spent working on this assignment.
 
 <details>
 <summary>Day 4</summary>
+### Forms and Filter
+
+11.30.23
+
+#### Number and Name of feature: 
+
+Feature #1: Filter by Number of Horns
+
+
+#### Estimate of time needed to complete: 
+2 hours
+
+#### Start time:
+3:00pm
+
+#### Finish time:
+8:00pm
+
+#### Actual time needed to complete:
+5 hours
+
+#### Comments:
+
+A question within the context of this lab assignment
+
+I'm just really confused. I really need a better way to organize the components and have an idea of how I will pass props before I need to do it. I should've grouped more state variables together for one useState, but I didn't even realize that was possible until my code broke and I had to troubleshoot. 
+
+An observation about the lab assignment, or related ‘Ah-hah!’ moment
+
+I thought I was making great strides in progress once I got my filter working, but then my modal functionality broke. And according to the console, the modal would open but would not close because setSelectBeast was not a function. And that was because I was not passing the prop correctly in the Gallery component. I was also using the hook useState improperly. I got overwhelmed pretty fast, and then I went to chatgpt and asked it to make me a diagram of my files so I could better organize state and see how I was passing down my props. It was a mess but I figured it out.
+
+Here's the diagram:
+![Diagram](diagram.lua)
+
+
+How long you spent working on this assignment. 5 hours
+
+
 </details>
 
-### Lighthouse
+## Lighthouse
 Day 1 -
 ![Lighthouse](Lighthouse.png)
 
@@ -118,3 +162,6 @@ Day 2 -
 
 Day 3 -
 ![Lighthouse](Lighthouse3.png)
+
+Day 4 -
+![Lighthouse](Lighthouse4.png)

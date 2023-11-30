@@ -7,6 +7,7 @@ body{
   background-color: #313131c5;
   background-image: linear-gradient(to right, #e5e1c0d4, rgb(8, 2, 33) 5px, #797979 5px, #b0b0b0 );
   background-size: 20px 100%;
+  margin-bottom: 80px;
 }
 
 h1 {
@@ -32,11 +33,15 @@ header {
   text-align: center;
   color:rgb(25, 126, 144);
   padding-top: 10px;
-  margin-bottom: 35px;
-  box-shadow: 2px 13px 6px -6px rgb(6, 49, 56);
+  margin-bottom: 65px;
+  box-shadow: 5px 13px 8px -6px rgb(6, 49, 56);
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   background-color: black;
   color: rgb(35, 178, 207);
   padding: 20px;
@@ -56,8 +61,7 @@ text-align: center;
 padding: 12px;
 border-radius: 5px;
 box-shadow: rgb(59, 90, 117) 4px 3px 5px 0px inset, rgb(8, 2, 33) -5px -3px 6px 1px inset;
-/* box-shadow: inset 2px 0 100px rgb(8, 64, 73);
-box-shadow: 3px 5px 2px rgb(122, 122, 122); */
+
     background: rgb(0,212,255);
     background: linear-gradient(45deg, rgb(1, 183, 219) 0%, rgb(8, 2, 33) 100%);    
     color: whitesmoke;

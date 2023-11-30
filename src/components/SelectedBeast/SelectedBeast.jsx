@@ -21,7 +21,8 @@ function SelectedBeast({ beast, setSelectedBeast }) {
             <Modal.Title>{beast.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={beast.imageUrl} alt={beast.title} />
+            <img src={beast.imageUrl} alt={beast.title}
+            style={{ width: '100%', height: 'auto' }}  />
             <p>{beast.description}</p>
           </Modal.Body>
           <Modal.Footer>

@@ -10,12 +10,13 @@ function Header({ title, handleFilterChange }) {
             <h1>{title}</h1>
           </Col>
           <Col xs="auto">
-            <Form>
+            <Form id="hornSelect">
               <Form.Select onChange={handleFilterChange}>
                 <option value="all">All</option>
                 <option value="1">One Horn</option>
                 <option value="2">Two Horns</option>
-                {/* Add other horn options */}
+                <option value="3">Three Horns</option>
+                <option value="100">One Hundred Horns</option>
               </Form.Select>
             </Form>
           </Col>
