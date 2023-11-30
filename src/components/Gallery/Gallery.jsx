@@ -18,12 +18,12 @@ function Gallery() {
     return chunked;
   }
 
-  const chunkedData = chunkArray(imageData, 4);
+  const chunkedData = chunkArray(imageData, 3);
 
   return (
     <div>
-      <Row xs={1} md={3} className="g-4">
-        {chunkedData.slice(0, 5).map((row, rowIndex) => (
+      <Row xs={1} md={2} lg={3} className="g-4">
+        {chunkedData.slice(0, 7).map((row, rowIndex) => (
           <React.Fragment key={rowIndex}>
             {row.map((item) => (
               <Col key={item._id}>
