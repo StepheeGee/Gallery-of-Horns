@@ -1,25 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 
-function HornedBeast({imageUrl, title, description, keyword, horns}) {
-  const [favorites, setFavorites] = useState(0);
+function HornedBeast({ imageUrl, title, description, keyword, horns, setSelectedBeast }) {
+  const [favorites, setFavorites] = React.useState(0);
 
   const incrementFavorites = () => {
     setFavorites((prevFavorites) => prevFavorites + 1);
+  };
+
+  const handleClick = () => {
+    setSelectedBeast({ imageUrl, title, description, keyword, horns });
   };
 
   return (
     <div>
       <div className="image-container">
         <div className="image-card">
-          <img src={imageUrl} alt={title} onClick={incrementFavorites} />
+          <img src={imageUrl} alt={title} onClick={handleClick} />
           <h3>{title}</h3>
           <p>{description}</p>
-          <p>Keyword: {keyword}</p>
-          <p>Horns: {horns}</p>
           <div className='fave'>
-            <Button role="img" aria-label="Heart" variant="warning" className="Button"  onClick={incrementFavorites}>
-            ❤️ {favorites} Favorites
+            <Button role="img" aria-label="Heart" variant="warning" className="Button" onClick={incrementFavorites}>
+              ❤️ {favorites}
             </Button>
           </div>
         </div>
@@ -29,4 +31,3 @@ function HornedBeast({imageUrl, title, description, keyword, horns}) {
 }
 
 export default HornedBeast;
-

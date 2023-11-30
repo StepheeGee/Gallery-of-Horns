@@ -7,7 +7,8 @@
 ## Development
 <details>
 <summary>Day 1</summary>
-Component Structure
+
+### Component Structure
 
 11.27.23
 </details>
@@ -15,12 +16,13 @@ Component Structure
 
 <details>
 <summary>Day 2</summary>
-React State and Props
+
+### React State and Props
 
 11.28.23
 
 
-#### Number and name of feature:
+#### Number and Name of feature:
 
 * Feature #1: Display Images
 * Feature #2: Allow Users to Favorite Individual Beasts
@@ -65,6 +67,26 @@ How long you spent working on this assignment? 5 hrs
 
 <details>
 <summary>Day 3</summary>
+
+### Passing Functions in Props
+
+11.29.23
+
+#### Number and Name of feature: 
+
+Feature #1: Display a Modal
+
+
+#### Estimate of time needed to complete: 
+2 hours
+
+#### Start time:
+ 7:00pm
+
+#### Finish time:
+
+#### Actual time needed to complete:
+
 </details>
 
 <details>
