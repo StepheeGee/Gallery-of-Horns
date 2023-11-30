@@ -11,7 +11,8 @@ function Header({ title, handleFilterChange }) {
           </Col>
           <Col xs="auto">
             <Form id="hornSelect">
-              <Form.Select onChange={handleFilterChange}>
+              <Form.Select defaultValue="filter" onChange={handleFilterChange}>
+              <option value="filter" disabled>Filter</option>
                 <option value="all">All</option>
                 <option value="1">One Horn</option>
                 <option value="2">Two Horns</option>
