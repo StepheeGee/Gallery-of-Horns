@@ -90,6 +90,7 @@ Feature #1: Display a Modal
 #### Actual time needed to complete:
 A lot
 
+#### Comments:
 A question within the context of this lab assignment.
 
 This is not coming together for me for some reason. I'm struggling to understand the difference between useState and this.State. I get that modal is a functional component, so does that mean it gets an exception and is allowed to control state? Because I didn't borrow state from somewhere else for the selected beast file. I used use state and let it manage the functionality for the modal. 

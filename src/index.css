@@ -16,7 +16,6 @@ h1 {
   font-family: 'Indie Flower', cursive;
   letter-spacing: 3px;
   text-shadow: 4px 1px rgb(6, 49, 56);
-  padding-bottom: 5px;
   padding-top: 25px;
   box-shadow: 2px 13px 6px -6px #f8a100;
 }
@@ -32,7 +31,7 @@ header {
   background-color: black;
   text-align: center;
   color:rgb(25, 126, 144);
-  padding: 10px;
+  padding-top: 10px;
   margin-bottom: 35px;
 }
 
@@ -70,8 +69,8 @@ margin: 10px;
 }
 
 .g-4{
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 
 }
 
