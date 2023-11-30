@@ -3,6 +3,7 @@
 [Netlify Link](https://luxury-marzipan-b33aff.netlify.app/)
 
 [PR Link](https://github.com/StepheeGee/Gallery-of-Horns/pull/1)
+[PR Link Day 3](https://github.com/StepheeGee/Gallery-of-Horns/pull/3)
 
 ## Development
 <details>
@@ -84,8 +85,22 @@ Feature #1: Display a Modal
  7:00pm
 
 #### Finish time:
+11:56pm
 
 #### Actual time needed to complete:
+A lot
+
+A question within the context of this lab assignment.
+
+This is not coming together for me for some reason. I'm struggling to understand the difference between useState and this.State. I get that modal is a functional component, so does that mean it gets an exception and is allowed to control state? Because I didn't borrow state from somewhere else for the selected beast file. I used use state and let it manage the functionality for the modal. 
+
+An observation about the lab assignment, or related ‘Ah-hah!’ moment. 
+
+Didn't happen tonight. I couldn't even change the background on my modal. 
+
+How long you spent working on this assignment.
+
+5 hours.
 
 </details>
 
@@ -99,3 +114,6 @@ Day 1 -
 
 Day 2 -
 ![Lighthouse](Lighthouse2.png)
+
+Day 3 -
+![Lighthouse](Lighthouse3.png)
