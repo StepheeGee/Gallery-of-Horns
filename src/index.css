@@ -17,7 +17,7 @@ h1 {
   letter-spacing: 3px;
   text-shadow: 4px 1px rgb(6, 49, 56);
   padding-top: 25px;
-  box-shadow: 2px 13px 6px -6px rgb(6, 49, 56);
+  
 }
 
 h3{
@@ -33,6 +33,7 @@ header {
   color:rgb(25, 126, 144);
   padding-top: 10px;
   margin-bottom: 35px;
+  box-shadow: 2px 13px 6px -6px rgb(6, 49, 56);
 }
 
 footer {

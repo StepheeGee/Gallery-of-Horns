@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -7,8 +7,8 @@ import SelectedBeast from '../SelectedBeast/SelectedBeast.jsx';
 import imageData from '../../data/data.json';
 
 
-function Gallery() {
-  const [selectedBeast, setSelectedBeast] = React.useState(null);
+function Gallery({ setSelectedBeastProp, filterValue }) {
+  const [gallerySelectedBeast, setGallerySelectedBeast] = useState(null);
 
   function chunkArray(array, size) {
     const chunked = [];
@@ -18,12 +18,20 @@ function Gallery() {
     return chunked;
   }
 
-  const chunkedData = chunkArray(imageData, 4);
+  const filteredData = filterValue === 'all'
+    ? imageData
+    : imageData.filter(beast => beast.horns === parseInt(filterValue));
+
+  const chunkedFilteredData = chunkArray(filteredData, 4);
+
+  const handleSelectBeast = (beast) => {
+    setGallerySelectedBeast(beast);
+  };
 
   return (
     <div>
       <Row xs={1} md={3} className="g-4">
-        {chunkedData.slice(0, 5).map((row, rowIndex) => (
+        {chunkedFilteredData.map((row, rowIndex) => (
           <React.Fragment key={rowIndex}>
             {row.map((item) => (
               <Col key={item._id}>
@@ -33,14 +41,14 @@ function Gallery() {
                   description={item.description}
                   keyword={item.keyword}
                   horns={item.horns}
-                  setSelectedBeast={setSelectedBeast}
+                  setSelectedBeast={handleSelectBeast}
                 />
               </Col>
             ))}
           </React.Fragment>
         ))}
       </Row>
-      <SelectedBeast beast={selectedBeast} setSelectedBeast={setSelectedBeast} />
+      <SelectedBeast beast={gallerySelectedBeast} setSelectedBeast={setGallerySelectedBeast} />
     </div>
   );
 }

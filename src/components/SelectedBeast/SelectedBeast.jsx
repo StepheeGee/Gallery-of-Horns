@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 function SelectedBeast({ beast, setSelectedBeast }) {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(!!beast);
 
   useEffect(() => {
     setShowModal(!!beast);
@@ -36,6 +36,3 @@ function SelectedBeast({ beast, setSelectedBeast }) {
 }
 
 export default SelectedBeast;
-
-
-
