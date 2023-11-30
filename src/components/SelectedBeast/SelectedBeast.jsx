@@ -14,7 +14,7 @@ function SelectedBeast({ beast, setSelectedBeast }) {
   };
 
   return (
-    <Modal show={showModal} onHide={handleClose}>
+    <Modal show={showModal} onHide={handleClose} animation={true}>
       {beast && (
         <>
           <Modal.Header closeButton>
