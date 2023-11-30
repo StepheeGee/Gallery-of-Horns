@@ -23,7 +23,7 @@ header {
   text-align: center;
   color:rgb(25, 126, 144);
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 footer {
@@ -34,8 +34,8 @@ footer {
 }
 
 img{
-  height: 300px;
-  width: 350px;
+  height: 250px;
+  width: 300px;
   margin: 20px auto;
   box-shadow: 6px 4px 8px rgb(0, 0, 0);
 
@@ -43,12 +43,15 @@ img{
 
 .image-card{
 text-align: center;
-height: 600px;
-box-shadow: inset 2px 0 10px rgb(8, 64, 73);
+padding: 10px;
+border-radius: 5px;
+box-shadow: inset 2px 0 100px rgb(8, 64, 73);
+box-shadow: 3px 5px 2px rgb(122, 122, 122);
     background: rgb(0,212,255);
   
     background: linear-gradient(45deg, rgba(0,212,255,1) 0%, rgba(11,3,45,1) 100%);    
     color: whitesmoke;
+margin: 20px;
 
 }
 
@@ -57,8 +60,10 @@ box-shadow: inset 2px 0 10px rgb(8, 64, 73);
   box-shadow: 2px 3px 3px #4f3401;
 }
 
-
-
+.g-4{
+  margin-left: 70px;
+  margin-right: 70px;
+}
 
 
 
