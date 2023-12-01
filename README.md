@@ -4,7 +4,7 @@ Author: Stephanie G Johnson
 
 ## Links to Page
 
-[Netlify Link](https://luxury-marzipan-b33aff.netlify.app/)
+[Netlify Link](https://stepheegee.netlify.app/)
 
 [PR Link](https://github.com/StepheeGee/Gallery-of-Horns/pull/1)
 
