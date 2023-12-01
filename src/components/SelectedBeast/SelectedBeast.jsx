@@ -3,7 +3,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 function SelectedBeast({ beast, setSelectedBeast }) {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(!!beast);
 
   useEffect(() => {
     setShowModal(!!beast);
@@ -21,7 +21,8 @@ function SelectedBeast({ beast, setSelectedBeast }) {
             <Modal.Title>{beast.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={beast.imageUrl} alt={beast.title} />
+            <img src={beast.imageUrl} alt={beast.title}
+            style={{ width: '100%', height: 'auto' }}  />
             <p>{beast.description}</p>
           </Modal.Body>
           <Modal.Footer>
@@ -36,5 +37,4 @@ function SelectedBeast({ beast, setSelectedBeast }) {
 }
 
 export default SelectedBeast;
-
 

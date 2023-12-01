@@ -6,13 +6,17 @@ import Footer from './components/Footer/Footer.jsx';
 import SelectedBeast from './components/SelectedBeast/SelectedBeast.jsx'; 
 
 function App() {
-  const [selectedBeast, setSelectedBeast] = useState(null); 
+  const [selectedBeast, setSelectedBeast] = useState(null);
+  const [filterValue, setFilterValue] = useState('all');
+  const handleFilterChange = (event) => {
+    setFilterValue(event.target.value);
+  };
 
   return (
     <>
-      <Header title="Horned Beasts" />
-      <Gallery setSelectedBeast={setSelectedBeast} /> 
-      {selectedBeast && <SelectedBeast beast={selectedBeast} setSelectedBeast={setSelectedBeast} />} 
+      <Header title="Horned Beasts" handleFilterChange={handleFilterChange} />
+      <Gallery setSelectedBeast={setSelectedBeast} filterValue={filterValue} />
+      {selectedBeast && <SelectedBeast beast={selectedBeast} setSelectedBeast={setSelectedBeast} />}
       <Footer />
     </>
   );
