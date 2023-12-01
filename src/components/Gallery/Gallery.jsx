@@ -18,6 +18,7 @@ function Gallery({ setSelectedBeastProp, filterValue }) {
     return chunked;
   }
 
+
   const filteredData = filterValue === 'all'
     ? imageData
     : imageData.filter(beast => beast.horns === parseInt(filterValue));
@@ -32,6 +33,7 @@ function Gallery({ setSelectedBeastProp, filterValue }) {
     <div>
       <Row xs={1} md={3} className="g-4">
         {chunkedFilteredData.map((row, rowIndex) => (
+
           <React.Fragment key={rowIndex}>
             {row.map((item) => (
               <Col key={item._id}>

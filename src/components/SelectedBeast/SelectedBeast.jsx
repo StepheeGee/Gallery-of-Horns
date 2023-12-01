@@ -17,7 +17,7 @@ function SelectedBeast({ beast, setSelectedBeast }) {
     <Modal show={showModal} onHide={handleClose} animation={true}>
       {beast && (
         <>
-          <Modal.Header closeButton>
+          <Modal.Header closeButton >
             <Modal.Title>{beast.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -37,3 +37,4 @@ function SelectedBeast({ beast, setSelectedBeast }) {
 }
 
 export default SelectedBeast;
+
