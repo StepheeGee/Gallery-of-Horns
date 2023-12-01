@@ -10,6 +10,8 @@ Author: Stephanie G Johnson
 
 [PR Link Day 3](https://github.com/StepheeGee/Gallery-of-Horns/pull/3)
 
+[PR Link Day 4](https://github.com/StepheeGee/Gallery-of-Horns/pull/5/)
+
 ## Development
 <details>
 <summary>Day 1</summary>
@@ -129,10 +131,10 @@ Feature #1: Filter by Number of Horns
 3:00pm
 
 #### Finish time:
-8:00pm
+10:03pm
 
 #### Actual time needed to complete:
-5 hours
+5 hours because I took a two hour break to tackle a diff assignment
 
 #### Comments:
 
